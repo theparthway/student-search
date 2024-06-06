@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Student</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center">
+  <div class="w-full max-w-xl bg-gray-800 px-4 py-4 rounded-xl">
+    <h2 class="text-2xl font-bold mb-6 text-center">Search Student</h2>
+    <div class="mb-4">
+      <input type="text" id="searchName" placeholder="Enter student name" class="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-700 text-white leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+    <div class="flex items-center justify-center mb-4">
+      <button onclick="searchStudent()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Search</button>
+    </div>
+    <div id="result" class="flex flex-col gap-6"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
