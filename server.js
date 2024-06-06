@@ -23,8 +23,8 @@ app.use('/auth', authRoutes);
 app.use('/students', studentRoutes);
 
 app.get('/', (req, res) => {
-    res.json({ student });
-})
+    res.redirect('/index.html');
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

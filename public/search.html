@@ -5,12 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Search Student</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .logo {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      height: 40px; /* Adjust as needed */
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center">
+<body class="bg-white text-white min-h-screen flex flex-col gap-8 items-center justify-center relative">
+  <!-- Logo -->
+  <img src="Mahindra_University.png" alt="Logo" class="logo">
   <div class="w-full max-w-xl bg-gray-800 px-4 py-4 rounded-xl">
     <h2 class="text-2xl font-bold mb-6 text-center">Search Student</h2>
     <div class="mb-4">
       <input type="text" id="searchName" placeholder="Enter student name" class="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-700 text-white leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+    <div class="mb-4">
+      <input type="text" id="searchRoom" placeholder="Enter room number" class="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-700 text-white leading-tight focus:outline-none focus:shadow-outline">
     </div>
     <div class="flex items-center justify-center mb-4">
       <button onclick="searchStudent()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Search</button>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    .video-bg {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center min-h-screen bg-black text-blue-900">
+  <!-- Video Background -->
+  <video autoplay muted loop class="video-bg">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Logo and Link -->
+  <div class="absolute top-0 left-0 m-4">
+    <img src="Mahindra_University.png" alt="Logo" class="h-16">
+  </div>
+  <div class="flex flex-col items-center justify-center mt-16">
+    <h1 class="text-4xl font-bold mb-8">Mahindra Hostels</h1>
+    <a href="login.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</a>
+  </div>
+</body>
+</html>
